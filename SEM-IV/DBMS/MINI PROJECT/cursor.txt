@@ -1,0 +1,25 @@
+create or replace function gradeall return varchar2 is
+cursor c is select m1,m2,m3 from student;
+mark1 integer;
+mark2 integer;
+mark3 integer;
+average number(5,2);
+
+begin
+open c;
+loop
+fetch c into mark1,mark2,mark3;
+exit when c%notfound;
+average:=(mark1+mark2+mark3)/3;
+if(mark1<50 or mark2<50 or mark3<50) then
+return('FAIL');
+elsif(average>=90) then return('A+');
+elsif(average>=80) then return('A');
+elsif(average>=70) then return('B');
+elsif(average>=60) then return('C');
+else
+return('D');
+end if;
+end loop;
+close c;
+end;

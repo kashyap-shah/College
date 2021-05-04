@@ -1,0 +1,21 @@
+mysql> desc Student; 
++-------+-------------+------+-----+---------+----------------+ 
+| Field | Type        | Null | Key | Default | Extra          | 
++-------+-------------+------+-----+---------+----------------+ 
+| tid   | int(4)      | NO   | PRI | NULL    | auto_increment | 
+| name  | varchar(30) | YES  |     | NULL    |                | 
+| subj1 | int(2)      | YES  |     | NULL    |                | 
+| subj2 | int(2)      | YES  |     | NULL    |                | 
+| subj3 | int(2)      | YES  |     | NULL    |                | 
+| total | int(3)      | YES  |     | NULL    |                | 
+| per   | int(3)      | YES  |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+ 
+7 rows in set (0.00 sec)
+SQL Trigger to problem statement.
+
+create trigger stud_marks 
+before INSERT 
+on 
+Student 
+for each row 
+set Student.total = Student.subj1 + Student.subj2 + Student.subj3, Student.per = Student.total * 60 / 100;
