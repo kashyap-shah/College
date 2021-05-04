@@ -32,7 +32,7 @@ HS105.01A | LIBERAL ARTS - MEDIA AND GRAPHIC DESIGN
 ### Semester Result
 SGPA - **7.90** | November 2018
 ### Submissions
-[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/rudrabarad/Depstar-File-Submission/tree/master/SEM%20I)
+[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-I)
 <br><br>
 
 ## SEM II
@@ -47,7 +47,7 @@ HS126.01 A | COMMUNICATION SKILLS - 1
 ### Semester Result
 SGPA - **8.29** | April 2019
 ### Submissions
-[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/rudrabarad/Depstar-File-Submission/tree/master/SEM%20II)
+[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-II)
 <br><br>
 
 ## SEM III
@@ -64,7 +64,7 @@ HS122 A | VALUES AND ETHICS
 ### Semester Result
 SGPA - **8.04** | November 2019
 ### Submissions
-[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/rudrabarad/Depstar-File-Submission/tree/master/SEM%20III)
+[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-III)
 <br><br>
 
 ## SEM IV
@@ -82,7 +82,7 @@ CE282.01 | WEB DESIGNING
 ### Semester Result
 SGPA - **9.56** | April 2020
 ### Submissions
-[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/rudrabarad/Depstar-File-Submission/tree/master/SEM%20IV)
+[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-IV)
 <br><br>
 
 ## SEM V
@@ -100,7 +100,7 @@ HS131.02 A | COMMUNICATION AND SOFT SKILLS
 ### Semester Result
 SGPA - **9.19** | December 2020
 ### Submissions
-[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/rudrabarad/Depstar-File-Submission/tree/master/SEM%20V)
+[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-V)
 <br><br>
 
 
