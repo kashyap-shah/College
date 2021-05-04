@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Find the longest word within a string</title>
+<script>
+function longest_word(str)
+{
+  var arr = str.match(/\w[a-z]{0,}/gi);
+  var result = arr[0];
+
+  for(var x = 1 ; x < arr.length ; x++)
+  {
+    if(result.length < arr[x].length)
+    {
+    result = arr[x];
+    } 
+  }
+  return result;
+}
+document.write(longest_word('Kashyap Shah'));
+</script>
+</head>
+<body>
+</body>
+</html>
