@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q2) JavaScript program to concatenate two strings except their first character.</title>
+</head>
+<body>
+
+	<button onclick="result()">Concatenate Two Strings without first letter!</button>
+	<p id="demo"></p>
+
+</body>
+<script type="text/javascript">
+ 
+function concatenate(str1, str2) {
+  str1 = str1.substring(1, str1.length);
+  str2 = str2.substring(1, str2.length);
+  return str1 + str2;
+}
+
+function myFunction1() {
+ var word1 = prompt("Please enter word1:");
+ return word1;
+}
+
+function myFunction2() {
+  var word2 = prompt("Please enter word2");
+  return word2;
+  }
+
+function result() {
+  document.getElementById("demo").innerHTML=concatenate(myFunction1(),myFunction2());  
+}
+
+</script>
+</html>
