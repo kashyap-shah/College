@@ -13,11 +13,11 @@ This readme also consists of all the details of all the semesters and the courss
 **Student Id -** 18DCE115 <br>
 
 # Semester Details
-- [SEM I]()
-- [SEM II]()
-- [SEM III]()
-- [SEM IV]()
-- [SEM V](https://github.com/rudrabarad/Depstar-File-Submission#sem-v)
+- [SEM I](https://github.com/kashyap-shah/College-Documents#sem-i)
+- [SEM II](https://github.com/kashyap-shah/College-Documents#sem-ii)
+- [SEM III](https://github.com/kashyap-shah/College-Documents#sem-iii)
+- [SEM IV](https://github.com/kashyap-shah/College-Documents#sem-iv)
+- [SEM V](https://github.com/kashyap-shah/College-Documents#sem-v)
 
 ## SEM I
 ### Course Details
