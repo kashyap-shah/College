@@ -18,7 +18,7 @@ This readme also consists of all the details of all the semesters and the courss
 - [SEM III](https://github.com/kashyap-shah/College-Documents#sem-iii)
 - [SEM IV](https://github.com/kashyap-shah/College-Documents#sem-iv)
 - [SEM V](https://github.com/kashyap-shah/College-Documents#sem-v)
-- [SEM V](https://github.com/kashyap-shah/College-Documents#sem-vi)
+- [SEM VI](https://github.com/kashyap-shah/College-Documents#sem-vi)
 
 ## SEM I
 ### Course Details
