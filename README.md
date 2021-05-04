@@ -1,5 +1,3 @@
-# College-Documents
-Collection of Practicals, Files, Assignments and Results throughout my B.Tech 👨‍🎓📚
 # Bachelor's Degree Details
 
 This repository is collection of all the submissions done by **KASHYAP SHAH | 18DCE115** throughout his Bchelor's Degree which consists of ``Practicals``, ``Assignemnts``, ``Pratical Files``, ``Notes``, ``External Practical Files`` and ``Exam Answersheets``.
@@ -11,6 +9,7 @@ This readme also consists of all the details of all the semesters and the courss
 **Institute Name -** [Devang Patel Institute of Advance Technology and Research](https://www.charusat.ac.in/depstar/) <br>
 **Degree Duration -** 4 Years [2018-2022] <br>
 **Student Id -** 18DCE115 <br>
+**[CERTIFICATES](https://github.com/kashyap-shah/College-Documents/tree/main/Certificates)**
 
 # Semester Details
 - [SEM I](https://github.com/kashyap-shah/College-Documents#sem-i)
