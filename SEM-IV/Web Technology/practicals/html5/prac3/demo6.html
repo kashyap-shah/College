@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo6</title>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid black;"></canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(0,0);
+ctx.lineTo(300,300);
+
+ctx.moveTo(0,50);
+ctx.lineTo(250,300);
+
+ctx.moveTo(0,100);
+ctx.lineTo(200,300);
+
+ctx.moveTo(0,150);
+ctx.lineTo(150,300);
+
+ctx.moveTo(0,200);
+ctx.lineTo(100,300);
+
+ctx.moveTo(0,250);
+ctx.lineTo(50,300);
+
+
+
+ctx.moveTo(50,0);
+ctx.lineTo(300,250);
+
+ctx.moveTo(100,0);
+ctx.lineTo(300,200);
+
+ctx.moveTo(150,00);
+ctx.lineTo(300,150);
+
+ctx.moveTo(200,0);
+ctx.lineTo(300,100);
+
+ctx.moveTo(250,00);
+ctx.lineTo(300,50);
+
+
+ctx.stroke();
+</script> 
+</body>
+</html>

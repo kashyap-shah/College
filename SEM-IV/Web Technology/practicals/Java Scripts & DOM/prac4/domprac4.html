@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamically Add Remove Table Rows in JavaScript</title>
+
+<style>
+        table 
+        {
+            width: 70%;
+            font: 17px Calibri;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+</style>
+</head>
+<body onload="createTable()">
+
+<h1>Dynamic table using create element.</h1>
+    <h3>Adding new row and delete:</h3>
+    column1:<input type="text" id="field"><br><br>
+    column2:<input type="text" id="data"><br><br>
+    <input type="button" id="send" value="Add Data" onclick="addRow()">
+    <input type="button" id="delete" value="Delete Data" onclick="deleteRow()"><br><br>
+    <table id="table"></table>
+
+    <h3>Adding and Deleting cell:</h3>
+    New cell:<input type="text" id="celldata"><br><br>
+    <input type="button" onclick="addcell()" value="add cell">
+    <input type="button" onclick="deletecell()" value="delete cell"><br><br>
+    <table>
+    <tr id="row"></tr>
+    </table><br><br>
+<hr>
+
+<ps>Click the "Add New Row" button to add row to the table. Enter values in each row and press the "Submit Data" button. You can also check the result in your browsers console window.</p>
+<p>
+<input type="button" id="addRow" value="Add New Row" onclick="addrow()" />
+</p>
+
+<!--THE CONTAINER WHERE WE'll ADD THE DYNAMIC TABLE-->
+<div id="cont"></div>
+
+<p><input type="button" id="bt" value="Sumbit Data" onclick="sumbit()" /></p>
+
+<p id="result"></p><br><br>
+
+</body>
+
+<script>
+    // ARRAY FOR HEADER.
+    var arrHead = new Array();
+arrHead = ['', 'Emp. Name', 'Designation', 'Age'];
+    function createTable() {
+        var empTable = document.createElement('table');
+empTable.setAttribute('id', 'empTable');            // SET THE TABLE ID.
+
+        var tr = empTable.insertRow(-1);
+
+        for (var h = 0; h <arrHead.length; h++) {
+            var th = document.createElement('th');          // TABLE HEADER.
+th.innerHTML = arrHead[h];
+tr.appendChild(th);
+        }
+
+        var div = document.getElementById('cont');
+div.appendChild(empTable);    // ADD THE TABLE TO YOUR WEB PAGE.
+    }
+
+    // ADD A NEW ROW TO THE TABLE.s
+    function addrow() {
+        var empTab = document.getElementById('empTable');
+
+        var rowCnt = empTab.rows.length;        // GET TABLE ROW COUNT.
+        var tr = empTab.insertRow(rowCnt);      // TABLE ROW.
+        tr = empTab.insertRow(rowCnt);
+
+        for (var c = 0; c <arrHead.length; c++) {
+            var td = document.createElement('td');          // TABLE DEFINITION.
+            td = tr.insertCell(c);
+
+            if (c == 0) {           // FIRST COLUMN.
+                // ADD A BUTTON.
+                var button = document.createElement('input');
+
+                // SET INPUT ATTRIBUTE.
+button.setAttribute('type', 'button');
+button.setAttribute('value', 'Remove');
+
+                // ADD THE BUTTON's 'onclick' EVENT.
+button.setAttribute('onclick', 'removeRow(this)');
+
+td.appendChild(button);
+            }
+            else {
+                // CREATE AND ADD TEXTBOX IN EACH CELL.
+                var ele = document.createElement('input');
+ele.setAttribute('type', 'text');
+ele.setAttribute('value', '');
+
+td.appendChild(ele);
+            }
+        }
+    }
+
+    // DELETE
+    function removeRow(oButton) {
+        var empTab = document.getElementById('empTable');
+empTab.deleteRow(oButton.parentNode.parentNode.rowIndex); 
+    }
+    function sumbit() {
+        var myTab = document.getElementById('empTable');
+        var values = new Array();
+        for (row = 1; row <myTab.rows.length - 1; row++) {
+            for (c = 0; c <myTab.rows[row].cells.length; c++) {   
+
+                var element = myTab.rows.item(row).cells[c];
+                if (element.childNodes[0].getAttribute('type') == 'text') {
+values.push("'" + element.childNodes[0].value + "'");
+                }
+            }
+        }
+                    document.getElementById("result").innerHTML="Result:"+values+"\n";
+                    console.log(values);
+    }
+
+     function addRow(){
+            let field,data;
+            field = document.getElementById('field').value;
+            data = document.getElementById('data').value;
+
+            var tr = document.createElement('tr');
+            var td1 = document.createElement('td');
+            var td2 = document.createElement('td');
+
+            td1.innerHTML = field;
+            td2.innerHTML = data;
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+
+            document.getElementById('table').appendChild(tr);
+        }
+        function deleteRow() {
+            document.getElementById('table').deleteRow(-1);
+        }
+        function addcell(){
+            var row=document.getElementById("row");
+            var cell=row.insertCell(-1);
+            cell.innerHTML=document.getElementById("celldata").value;
+        }
+        function deletecell(){
+            var row=document.getElementById("row");
+            row.deleteCell(-1);
+        }
+</script>
+
+</html>

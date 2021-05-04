@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+$("#b2").click(function()
+{
+$("p").hide();
+});
+});
+
+$(document).ready(function()
+{
+$("#b1").click(function()
+{
+$("p").show();
+});
+});
+
+$(document).ready(function()
+{
+
+$("#p1").mouseenter(function()
+{
+alert("POP up!");
+});
+
+});
+
+$(document).ready(function()
+{
+$("#flip").click(function()
+{
+$("#slide").slideToggle("fast");//both events are called alternatively
+});	//if want to
+call one at a time then either keep just one event or change
+});	//callig
+event for any one .
+
+$(document).ready(function()
+{
+$("#flip").mouseover(function()
+{
+$("#slide").slideUp("slow");
+});
+});
+
+$(document).ready(function()
+{
+$("input").focus(function()
+{
+$(this).css("background-color","cyan");
+});
+});
+
+$(document).ready(function()
+{
+$("input").blur(function()
+{
+$(this).css("background-color","gray");
+});
+});
+
+$(document).ready(function()
+{
+$("#bt1").click(function()
+{
+$("#d1").fadeIn(3000);
+$("#d2").fadeIn(2000);
+$("#d3").fadeIn(1000);
+
+
+});
+});
+
+$(document).ready(function()
+{
+$("#bt2").click(function()
+{
+$("#d1").fadeOut(1000);
+$("#d2").fadeOut(2000);
+$("#d3").fadeOut(3000);
+});
+});
+</script>
+
+<style >
+#slide
+{
+display: none;
+}
+#d1{display: none;} #d2{display: none;} #d3{display: none;}
+</style>
+</head>
+<body>
+<p>Click here to hide the text</p>
+<p id="p1">Alert will be generated!!</p>
+<button id="b1">SHOW</button>
+<button id="b2">HIDE</button>
+<p id="flip">Click to Slide content</p>
+<p id="slide">Hello World</p><br>
+NAME:<input type="text" name="NAME"><br> EMAIL:<input type="text" name="Email"><br>
+<button id="bt1">Fade In</button>
+<button id="bt2">Fade Out</button>
+<div id="d1" style="height:50px; width:50px ;background-color:red"></div><br>
+<div id="d2" style="height:50px; width:50px ;background-color:yellow"></div><br>
+<div id="d3" style="height:50px; width:50px ;background-color:green"></div><br>
+</body>
+</html>

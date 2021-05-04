@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script>
+
+			function add(){
+			var p1 = parseInt(document.getElementById("num1").value);
+			var p2 = parseInt(document.getElementById("num2").value);
+			alert(p1+"+"+p2+"="+(p1+p2));
+			}
+
+			function sub(){
+			var p1 = parseInt(document.getElementById("num1").value);
+			var p2 = parseInt(document.getElementById("num2").value);
+			alert(p1+"-"+p2+"="+(p1-p2));
+			}
+
+			function mul(){
+			var p1 = parseInt(document.getElementById("num1").value);
+			var p2 = parseInt(document.getElementById("num2").value);
+			alert(p1+"*"+p2+"="+(p1*p2));
+			}
+
+			function div(){
+			var p1 = parseInt(document.getElementById("num1").value);
+			var p2 = parseInt(document.getElementById("num2").value);
+			alert(p1+"/"+p2+"="+(p1/p2));
+			}
+	</script>
+	<style type="text/css">
+
+		ul{
+			list-style: none;
+			margin: 10px;
+			padding: 2px;
+		}
+
+		li{
+			float: left;
+			padding-left: 10px;
+		}
+		ul li button{
+			opacity: 0.8;
+			border:3px solid black;
+			padding: 15px;
+			font-family: roboto;
+			font-size: 15px;
+			background-color:white;
+			color:blue;
+
+		}
+
+		ul li button:hover{
+			color:red;
+			background-color:yellow;
+			transition:0.8s ease;
+		}
+
+		input{
+			opacity: 0.8;
+			border:3px solid black;
+			padding: 5px;
+			font-family: Stencil;
+			font-size: 15px;
+			background-color:yellow;
+			color:blue;
+		}
+
+		input:hover{
+			color:red;
+			background-color:white;
+			transition:0.8s ease;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<input type="number" name="num1" id="num1" placeholder="First Number">
+		&nbsp&nbsp&nbsp&nbsp
+		<input type="number" name="num2" id="num2" placeholder="Second Number">
+		
+	</div>
+
+ 	<ul>
+		<li><button onclick="add()">Add</button></li>
+		<li><button onclick="sub()">Subtract</button></li>
+		<li><button onclick="mul()">Multiply</button></li>
+		<li><button onclick="div()">Divide</button></li>
+	</ul>
+	</center>
+</body>
+</html>

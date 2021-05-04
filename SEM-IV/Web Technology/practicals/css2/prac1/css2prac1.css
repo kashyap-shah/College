@@ -1,0 +1,48 @@
+h1::first-letter {
+color: #ff0000;
+font-size: xx-medium;
+}
+
+pre{
+position:relative;
+font-size: 15px;
+}
+
+pre::first-line{
+color:blue;
+}
+
+div{
+c
+background-color: lightgreen;
+  border: 15px solid blue;
+  padding: 80px;
+  margin: 50px;
+}
+
+.b{
+outline-width:15px;
+outline-color:#ff0000;
+outline-style: dashed;
+font-size: 15px;
+background-color: yellow;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 15px;
+}
+.main
+{
+text-align:right;
+font-style: bold;
+}
+
+h2 {
+	color:#0000ff;
+     text-align:center;
+	 font-size:50px;}
+
+h3.dis{
+	display:block;
+}
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <script type="text/javascript">
+    
+    function checkPassword(form)
+      {
+        pwd1=form.pwd1.value;
+        pwd2=form.pwd2.value;
+        no=form.no.value;
+        name=form.name.value;
+
+        if(let!='a,b')
+        {
+        	alert("Only letters allowed");
+        }
+
+        if(pwd1=='')
+        {
+          alert("Enter password");
+        }
+
+        else if(pwd1.length<6)
+        {
+          alert("Too short password");
+        }
+
+        else if(pwd2.length<6)
+        {
+          alert("Too short password");
+        }
+        else if(pwd2=='')
+        {
+          alert("Enter Confirm password");
+        }
+
+        else if(pwd1!=pwd2)
+        {
+          alert("password not match");
+        }
+
+        else if(no.length>10 || no.length<10)
+        {
+          alert("Wrong Mobile");
+        }
+        
+        else {
+          alert("Password match");
+        }
+
+        
+      }
+
+  </script>
+
+</head>
+
+
+
+
+<div class="div1"></div>
+<center><h2>Validation using html 5</h2></center>
+<form action="#">
+  
+  <table>
+   
+      <tr>
+      <td><label>Name:</label></td>
+      <td><input type="tel" id="name" name="" placeholder="Enter Name" pattern=".{6,32}" title=""></td>
+      <td><input type="submit"></td>
+      </tr>
+
+      <tr>
+      <td><label for="pwd">Password:</label></td>
+      <td><input type="password" id="pwd" name="pwd" placeholder="Enter 6 or more Characters" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,32}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
+      <td><input type="submit"></td>
+      </tr>
+      
+      <tr>
+      <td><label for="email">Email:</label></td>
+      <td><input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}"></td>
+      <td><input type="submit"></td>
+      </tr>
+
+      <tr>
+      <td><label for="website">Homepage:</label></td>
+      <td><input type="url" id="website" name="website" pattern="https?://.+" title="Include http://"></td>
+      <td><input type="submit"></td>
+      </tr>
+
+      <tr>
+      <td><label>Contact No.:</label></td>
+      <td><input type="tel" id="cn" name="cn" pattern="[0-9]{10}" title="Enter numbers"></td>
+      <td><input type="submit"></td>
+      </tr>
+
+
+      <tr>
+      <td><label>Gender:</label></td>
+      <td>Male<input type="radio" id="male" name="gender"></td>
+      <td>Female<input type="radio" id="female" name="gender"></td>
+      </tr>
+  </table>
+</form>
+</div>
+<!------------------------------------------------C S S 3 . 0 -------------------------------------->
+
+  <div class="div2">
+    <center><h2>Validation using css3.0 prac5_3</h2></center>
+
+    <form onSubmit = "return checkPassword(this)">
+        <table>
+       	 
+         <tr>
+          <td><label>Name:</label></td>
+          <td><input type="tel" id="name" name="" placeholder="Enter Name"></td>
+        </tr>
+
+         <tr>
+            <td><label>Only letters:</label></td>
+            <td><input type="letters" id="let"  placeholder="Enter only letters"></td>
+           </tr>
+
+           <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password" id="pwd1"  placeholder="Enter 6 or more Characters"></td>
+           </tr>
+
+            <br>
+            <br>
+           <tr>
+            <td><label for="pwd">Confirm Password:</label></td>
+            <td><input type="password" id="pwd2"  placeholder="Enter 6 or more Characters" ></td>
+          </tr>
+
+          <tr>
+            <td><label>Mobile Number:</label></td>
+            <td><input type="number" id="no" placeholder="Enter 10 digit mobile no" ></td>
+          </tr>
+          
+          <tr>
+              <td><label>Gender:</label></td>
+              <td>Male<input type="radio" id="male" name="gender"></td>
+               <td>Female<input type="radio" id="female" name="gender"></td>
+          </tr>
+          <tr>
+              <td><input type="submit"></td>
+          </tr>
+          </table>
+    </form>
+  </div>
+
+  
+
+
+</body>
+</html>

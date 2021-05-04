@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo2</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="250" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(250,125,100,0,2*Math.PI);
+
+ctx.stroke();
+</script>
+</body>
+</html>

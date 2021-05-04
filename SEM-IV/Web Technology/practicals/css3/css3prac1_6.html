@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prac1_6-CSS3.0</title>
+	<style type="text/css">
+		#border{
+			border:10px solid black;
+			padding:10px;
+			border-image:url('1.jpg') 30 round;
+
+		}
+		#background{ 
+			width:700px;
+			height:400px;
+			background-image: url('3.jpg'),url('2.jpg'); 
+			background-size: auto,cover;
+			background-repeat: no-repeat,no-repeat;
+			background-position: bottom center,left top;
+		}
+		.text{
+			color:white;
+			height: 100px;
+		}
+		#clip-border-box{
+			border: 5px dashed black;
+			padding:10px;
+			background:yellow;
+			background-clip:border-box;
+		}
+		#clip-padding-box{
+			border: 5px dashed black;
+			padding:10px;
+			background:skyblue;
+			background-clip:padding-box;
+		}
+		#clip-content-box{
+			border: 5px dashed black;
+			padding:10px;
+			background:violet;
+			background-clip:content-box;
+		}
+
+		#text-overflow-clip{
+			border:1px solid black;
+			width:200px;
+			overflow: hidden;
+			text-overflow: clip;
+			white-space: nowrap;
+		}
+		#text-overflow-ellipsis{
+			border:1px solid black;
+			width:200px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		#word-wrap-normal{
+			word-wrap: normal;
+			border:1px solid black;
+			width:100px;
+		}
+		#word-wrap-breakword{
+			word-wrap:break-word;
+			border:1px solid black;
+			width:100px;
+		}
+		#word-break-normal{
+			word-break: normal;
+			border:1px solid black;
+			width:100px;
+		}
+		#word-break-keep-all{
+			word-break: keep-all;
+			border:1px solid black;
+			width:100px;
+		}
+		#word-break-break-all{
+			word-break: break-all;
+			border:1px solid black;
+			width:100px;
+		}
+		
+		#translate{
+			height:100px;
+			width:100px;
+			background-color: red;
+
+		}
+		#translate:hover{
+			transform:translate(200px,0px);
+			background-color: yellow;
+			transition: transform 3s ease;
+		}
+
+		#rotate{
+			height:100px;
+			width:100px;
+			background-color:maroon;
+		}
+
+		#rotate:hover{
+			transform:rotateZ(360deg);
+			transition: transform 3s ease;
+			background-color: yellow;
+		}
+
+		#scale{
+			height:100px;
+			width:100px;
+			background-color:red;
+		}
+
+		#scale:hover{
+			transform:scale(2,2);
+			background-color: yellow;
+			transition: transform 1s ease;
+		}
+
+		#skewx{
+			height:100px;
+			width:100px;
+			background-color: maroon;
+		}
+		#skewx:hover{
+			transform: skewX(50deg);
+			background-color: yellow;
+			transition: transform 0.9s ease;
+		}
+		#matrix{
+			height:100px;
+			width:100px;
+			background-color: red;
+		}
+		#matrix:hover{
+			transform:matrix(1, 2, -1, 1, 80, 80);
+			background-color: yellow;
+			transition: transform 0.9s ease;
+		}
+
+		#animation{
+			width:100px;
+			height:100px;
+			animation-name:demo;
+			animation-duration: 4s;
+			animation-iteration-count:infinite;
+			animation-delay: -1s;
+			animation-direction: normal;
+			animation-timing-function: ease-in-out;
+			position: absolute;
+		}
+		@keyframes demo{
+			0%{background-color:red;top:0px;left:0px;}
+			25%{background-color:yellow;top:0px;left:200px;}
+			50%{background-color:maroon;top:200px;left:200px;}
+			75%{background-color:yellow;top:200px;left:0px;}
+			100%{background-color:red;top:0px;left:0px;}
+		}
+
+		#multiple-column{
+			column-count:4;
+			column-gap:30px;
+			column-rule:6px groove green;
+			column-width:500px;
+			 /* column-count will be change */
+		}
+		#multiple-column h3{
+			column-span:all;
+			border:5px double peru;
+		}
+		#interface{
+			width:500px;
+			overflow:auto;
+			border:2px solid blue;
+			resize:both; /*horizontal or vertical*/
+		}
+		#outline{
+			border:5px solid blue;
+			outline: 10px solid red;
+			outline-offset: 10px;
+			padding: 10px;
+			margin:30px;
+		}
+		
+
+	 </style> 
+</head>
+<body>
+	<center>
+		<p id="border">This is the content.</p>
+	</center>
+
+	<h1>Multiple background</h1>
+	<center>
+		<div id="background"></div>
+	</center><br>
+	<h1>background clip</h1>
+	<div id="clip-border-box">
+		<p>this is the example of background-clip.</p>
+	</div><br><br>
+	<div id="clip-padding-box">
+		<p>this is the example of background-clip.</p>
+	</div><br>
+	<div id="clip-content-box">
+		<p>this is the example of background-clip.</p>
+	</div>
+
+	<h1>Text Overflow</h1>
+	
+	<p id="text-overflow-clip">This is the example of text poperty in css 3.0</p>
+	<p id="text-overflow-ellipsis">This is the example of text poperty in css 3.0</p>
+	
+	<h1>word wrap</h1>
+	<div  id="word-wrap-normal">
+		<p >
+			This is very loooooooooooooooooooooooooooooooog word.
+		</p>
+
+	</div><br><br>
+	<div  id="word-wrap-breakword">
+		<p >
+			This is very loooooooooooooooooooooooooooooooog word.
+		</p>
+
+	</div><br><br>
+	<h1>word break</h1>
+	<div  id="word-break-normal">
+		<p >
+			This is example of the text-with-hyphens word.
+		</p>
+
+	</div><br>
+	<div  id="word-break-keep-all">
+		<p >
+			This is example of the text-with-hyphens word.
+		</p>
+
+	</div><br>
+	<center>
+		<h1>Translate</h1>
+		<div id="translate"> 
+		</div><br>
+
+		<h1>Rotate</h1>
+		<div id="rotate"></div>
+
+		
+
+		<h1>Scale</h1>
+		<div id="scale"></div>
+
+		<h1>SkewX</h1>
+		<div id="skewx"></div>
+
+		<h1>Matrix</h1>
+		<div id="matrix"></div>
+	</center>
+
+	<h1>Animation</h1>
+	<div style="width:300px; height:300px; border:1px solid black; position:relative;">
+		<div id="animation">
+		</div>
+	</div>
+	
+	<h1>Multiple column layout</h1>
+	
+	<div id="multiple-column">
+		<h3>Multiple column layout</h3>
+		Chocolate is the most popular sweet treat in the world. People around the world (but mostly in Europe and the United States) consume more than 3 million tons of cocoa beans a year, according to the World Cocoa Foundation. And, not only does eating chocolate make you feel good, it may also be good for your heart and your brain.<br><br>
+
+		<b>What is chocolate?</b>
+        Chocolate is prepared from the fruit of the Theobroma cacao, a tropical tree whose name means "food of the gods" in Greek, according to "Chocolate: Food of the Gods," an online exhibit by the Cornell University Library.<br><br>
+
+        <b>Types of chocolate</b>
+        Fine chocolate falls into three categories: dark chocolate, milk chocolate and white chocolate, Williams said.<ul>
+        <li>Dark chocolate has chocolate liquor, cocoa butter, lecithin, sugar and vanilla.</li>
+        <li>Milk chocolate has all of the above plus milk fats and milk solids.</li>
+        <li>White chocolate contains everything milk chocolate does except chocolate liquor.</li></ul>
+        Chocolatiers debate whether white chocolate is really chocolate. Until 2002, the U.S. Food and Drug Administration considered it a confectionary rather than chocolate because it does not contain chocolate liquor. The Hershey Food Corp. and the Chocolate Manufacturers Association petitioned the FDA, which added a standard of identity for white chocolate. Because the FDA refers to it as white chocolate, rather than confectionary, some experts, like Williams, accept white chocolate as chocolate.<br>
+        Within the three categories, the FDA also acknowledges several grades, Williams said. They include unsweetened or brute, which can be up to 99 percent chocolate liquor; bittersweet; semisweet; and dark milk chocolate. The type of chocolate depends on what ingredients are present and the percentage of cocoa, in addition to where the beans are from and the way they are prepared.
+	</div>
+
+	<h1>User Interface Properties</h1>
+	<div id="interface">
+		Several recent studies have examined the role that chocolate may have on heart health. Cacao beans are full of phytonutrients, which act as antioxidants and provide additional benefits. Furthermore, cacao beans are rich sources of iron, copper, magnesium, zinc and phosphorus, according to the Harvard T.H. Chan School of Public Health. Dark chocolate contains two to three times more beneficial flavanols than milk chocolate because milk chocolate's cacao concentration is diluted with milk and possibly more sugar.
+		While most studies have found some correlation between chocolate consumption and reduced risk of heart problems, the amount and type of chocolate needed requires further study. A 2017 meta-analysis of the effects of chocolate on coronary heart disease, stroke and diabetes published in the journal Nutrients concluded that the most benefit was associated with moderate chocolate intake. The authors found little benefit in heart disease or stroke reduction among people who consumed chocolate more than three times a week. Protective effects against diabetes emerged at two servings a week, but that benefit disappeared if people had more than six servings a week.
+		On the other hand, the findings of a large-scale study of more than 150,000 primarily male U.S. veterans who did not have coronary artery disease at the beginning of the study, suggest that eating an ounce of chocolate at least five times a week may help prevent the risk of coronary artery disease-related events like heart attack and heart failure.
+		Chocolate may also help prevent the development of atrial fibrillation, a type of irregular heartbeat that increases the risk of heart failure, stroke and more. A study, published in the journal Heart in 2017, found that adults who ate chocolate at least once a month had 10 to 20 percent lower rates of developing atrial fibrillation than those who never or rarely ate chocolate.
+	</div>
+	<h1>Outline Offset</h1>
+	<div id="outline">
+		This is the example of outline offset property.
+	</div>
+	<footer>
+		Copiright Kashyap Shah(18dce115)
+	</footer>
+
+</body>
+</html>

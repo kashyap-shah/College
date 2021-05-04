@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo1</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500" height="250" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.moveTo(0,0);
+ctx.lineTo(166,125);
+
+ctx.moveTo(166,125);
+ctx.lineTo(333,125);
+
+ctx.moveTo(333,125);
+ctx.lineTo(500,250);
+ctx.stroke();
+</script>
+</body>
+</html>

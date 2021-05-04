@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo4</title>
+</head>
+<body>
+	<canvas id="mycanvas"></canvas>
+	<script type="text/javascript">
+		var c=document.getElementById("mycanvas");
+		var ctx=c.getContext("2d");
+
+		var grd=ctx.createLinearGradient(0,0,300,0);
+		grd.addColorStop(0,"blue");
+		grd.addColorStop(1,"red");
+
+		ctx.fillStyle=grd;
+		ctx.fillRect(20,20,300,160);
+	</script>
+</body>
+</html>

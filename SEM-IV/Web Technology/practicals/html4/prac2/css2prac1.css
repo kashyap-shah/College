@@ -1,0 +1,18 @@
+
+p::before {
+  content: url(1.jpg);
+}
+
+h1::first-letter {
+color: #ff0000;
+font-size: xx-large;
+}
+
+pre::first-line{
+background-image: url("2.jpeg");
+background-position: center;
+color: #ff0000;
+}
+
+
+

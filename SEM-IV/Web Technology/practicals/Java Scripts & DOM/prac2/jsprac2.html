@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<script>
+		var gender;
+		var hobby='';
+
+		function getInputValue(){
+			var name=document.getElementById("name").value;
+			document.getElementById("display_name").innerHTML="Name:"+name;	
+
+			var phone=document.getElementById("phone").value;
+			document.getElementById("display_phone").innerHTML="Phone Number:"+phone;
+
+			var password=document.getElementById("password").value;
+			document.getElementById("display_password").innerHTML="Password:"+password;
+
+			var confirmpassword=document.getElementById("confirmpassword").value;
+			document.getElementById("display_confirmpass").innerHTML="Confirm password:"+confirmpassword;	
+
+			document.getElementById("display_gender").innerHTML="Gender:"+gender;	
+			
+			var i;
+				for(i=1;i<=3;i++){
+					if(document.getElementById("hobby"+i).checked){
+						hobby=hobby+' '+document.getElementById("hobby"+i).value;
+					}
+				}
+			
+			document.getElementById("display_hobby").innerHTML="Hobbies:"+hobby;
+			
+			var dropdown=document.getElementById("dropdown");
+			var d=dropdown.options[dropdown.selectedIndex].value;
+			document.getElementById("display_browser").innerHTML="Browser:"+d;
+		}
+
+		function getRadioValue(temp){
+			 gender=temp;
+		}
+	</script>
+
+</head>
+<body>
+			<center><h1><b>Form</b></h1></center><br><br>
+			<table align="center" cellpadding="10px">
+
+			<tr>
+				<td><b>Name:</b></td>
+				<td><input type="text"  id="name"></td>
+			</tr>
+			
+			<tr>
+				<td><b>Phone no:</b></td>
+				<td><input type="text"  id="phone"></td>
+			</tr>
+			
+			<tr>
+				<td><b>Password:</b></td>
+				<td><input type="password"  id="password"></td>
+			</tr>
+
+			<tr>
+				<td><b>Confirm Password:</b></td>
+				<td><input type="password"  id="confirmpassword"></td>
+			</tr>
+
+			<tr>
+				<td><b>Gender:</b></td>
+				<td><input type="radio" name="gender"  value="Male" onclick="getRadioValue(this.value)">Male
+			<input type="radio" name="gender"  value="Female" onclick="getRadioValue(this.value)">Female</td>
+			</tr>
+			
+			<tr>
+				<td><b>Hobby:</b></td>
+				<td>
+					<input type="checkbox" name="hobby"  id="hobby1" value="Music">Music
+					<input type="checkbox" name="hobby" id="hobby2" value="Volleyball">Volleyball
+					<input type="checkbox" name="hobby" id="hobby3" value="Other">Other
+				</td>
+			</tr>
+
+			<tr>
+				<td><b>Select your browser:</b></td>
+				<td>
+					<select id="dropdown"> 
+						<option value="Chrome" selected="selected">Chrome</option>
+						<option value="Safari">Safari</option>
+						<option value="Firefox">Firefox</option>
+						<option value="Tor">Tor</option>
+						<option value="Other">Other</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td><input type="submit" onclick="getInputValue()"></td>
+				
+			</tr>
+
+	</table>
+		
+</body>
+<center>
+	<div id="display_name"></div>
+	<div id="display_phone"></div>
+	<div id="display_password"></div>
+	<div id="display_confirmpass"></div>
+	<div id="display_gender"></div>
+	<div id="display_hobby"></div>
+	<div id="display_browser"></div>
+</center>
+</body>
+</html>

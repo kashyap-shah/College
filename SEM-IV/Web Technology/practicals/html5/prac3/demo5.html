@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo5</title>
+</head>
+
+<body>
+	<canvas id="mycanvas" width="400" height="400"></canvas>
+	<script type="text/javascript">
+		var c=document.getElementById("mycanvas");
+		var ctx=c.getContext("2d");
+
+		ctx.beginPath();
+		ctx.strokeStyle="green";
+		ctx.lineWidth="100";
+		ctx.rect(100,100,200,200);
+		ctx.stroke();
+
+	</script>
+</body>
+</html>
