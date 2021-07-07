@@ -115,7 +115,7 @@ CE353      | SOFTWARE GROUP PROJECT - IV
 CE376      | PROGRAMMING IN PYTHON
 HS132.02 A | CONTRIBUTARY PERSONALITY DEVELOPEMENT
 ### Semester Result
-SGPA - **Pending** | May 2021
+SGPA - **9.50** | May 2021
 ### Submissions
 [![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-VI)
 <br><br>
