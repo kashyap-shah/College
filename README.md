@@ -9,6 +9,7 @@ This readme also consists of all the details of all the semesters and the courss
 **Institute Name -** [Devang Patel Institute of Advance Technology and Research](https://www.charusat.ac.in/depstar/) <br>
 **Degree Duration -** 4 Years [2018-2022] <br>
 **Student Id -** 18DCE115 <br>
+**Overall C.G.P.A. -** 8.81 <br>
 **[CERTIFICATES](https://github.com/kashyap-shah/College-Documents/tree/main/Certificates)**
 
 # Semester Details
@@ -18,6 +19,7 @@ This readme also consists of all the details of all the semesters and the courss
 - [SEM IV](https://github.com/kashyap-shah/College-Documents#sem-iv)
 - [SEM V](https://github.com/kashyap-shah/College-Documents#sem-v)
 - [SEM VI](https://github.com/kashyap-shah/College-Documents#sem-vi)
+- [SEM VII](https://github.com/kashyap-shah/College-Documents#sem-vii)
 
 ## SEM I
 ### Course Details
@@ -118,4 +120,20 @@ HS132.02 A | CONTRIBUTARY PERSONALITY DEVELOPEMENT
 SGPA - **9.50** | May 2021
 ### Submissions
 [![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-VI)
+<br><br>
+
+## SEM VI
+### Course Details
+COURSE CODE | COURSE NAME
+------------| -------------
+CE441      | BIG DATA ANALYTICS
+CE442      | DESIGN OF LANGUAGE PROCESSORS
+CE443      | CLOUD COMPUTING
+CE444      | INTERNET OF THINGS
+CE471      | BLOCKCHAIN TECHNOLOGY
+CE___      | SOFTWARE GROUP PROJECT - V
+### Semester Result
+SGPA - **Pending** 
+### Submissions
+[![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-VII)
 <br><br>
