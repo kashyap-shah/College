@@ -9,7 +9,7 @@ This readme also consists of all the details of all the semesters and the courss
 **Institute Name -** [Devang Patel Institute of Advance Technology and Research](https://www.charusat.ac.in/depstar/) <br>
 **Degree Duration -** 4 Years [2018-2022] <br>
 **Student Id -** 18DCE115 <br>
-**Overall C.G.P.A. -** 8.81 <br>
+**Overall C.G.P.A. -** 8.94 <br>
 **[CERTIFICATES](https://github.com/kashyap-shah/College-Documents/tree/main/Certificates)**
 
 # Semester Details
@@ -132,8 +132,8 @@ CE443      | CLOUD COMPUTING
 CE444      | INTERNET OF THINGS
 CE471      | BLOCKCHAIN TECHNOLOGY
 CE___      | SOFTWARE GROUP PROJECT - V
-### Semester Result
-SGPA - **Pending** 
+### Semester Result 
+SGPA - **9.63** 
 ### Submissions
 [![](https://img.shields.io/badge/Practical_Files_&_Assignments-Click_Here-%23FF0000.svg?&style=flat&logoColor=white&color=white)](https://github.com/kashyap-shah/College-Documents/tree/main/SEM-VII)
 <br><br>
